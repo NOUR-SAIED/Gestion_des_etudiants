@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<link rel="alternate" type="application/xml" href="etudiants.xml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des étudiants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #0074D9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px; 
+            height: auto;
+        }
+        footer {
+            background-color: #EA6702; 
+            color: #ffffff; 
+            height: 100px; 
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        footer address {
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gestion des étudiants</h1>
+    <img src="enetcomlogo.webp" alt="Logo" class="logo">
+    <form>
+        <label for="filiere">Recherche par filière :</label>
+        <input type="text" id="filiere" name="filiere" placeholder="Entrez la filière">
+        <button type="button" onclick="chargerEtudiants()">Valider</button>
+    </form>
+
+    <table id="listeEtudiants"></table>
+    <footer>
+        <address>
+            <p>Contactez-nous : <a href="mailto:nour.houda.saied@gmail.com">nour.houda.saied@gmail.com</a></p>
+            <p>Téléphone : 74 863 047 / 74 862 500</p>
+            
+        </address>
+    </footer>
+    
+
+    <script>
+        function chargerEtudiants() {
+            var filiere = document.getElementById('filiere').value;
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    afficherEtudiants(this, filiere);
+                }
+            };
+            xmlhttp.open("GET", "etudiants.xml", true);
+            xmlhttp.send();
+        }
+
+        function afficherEtudiants(xml, filiere) {
+            var xmlDoc = xml.responseXML;
+            var xpath = "/etudiants/etudiant[filiere='" + filiere + "']";
+            var etudiants = xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+            var etudiant = etudiants.iterateNext();
+            var table = "<tr><th>Nom</th><th>Prénom</th><th>Filière</th></tr>";
+            while (etudiant) {
+                table += "<tr><td>" +
+                etudiant.getElementsByTagName("nom")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                etudiant.getElementsByTagName("prenom")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                etudiant.getElementsByTagName("filiere")[0].childNodes[0].nodeValue +
+                "</td></tr>";
+                etudiant = etudiants.iterateNext();
+            }
+            document.getElementById("listeEtudiants").innerHTML = table;
+        }
+    </script>
+
+</body>
+</html>

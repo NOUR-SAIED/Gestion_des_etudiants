@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des étudiants</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestion des étudiants par filière</h1>
+    <select id="filiereSelect">
+        <option value="idsd">IDSD</option>
+        <option value="gt">GT</option>
+        <!-- Ajoutez d'autres options selon les filières disponibles -->
+    </select>
+    <div id="etudiantsList"></div>
+    <div id="cvModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="cvContent"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

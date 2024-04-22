@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecole>
+   <filiere nom="IDSD">
+    <etudiant>
+        <photo>lien.jpg</photo>
+        <nom>moomen</nom>
+        <prenom>Wejden</prenom>
+        <cv>cv1.html</cv>
+        <notes>
+            <matiere nom="Math">18</matiere>
+            <matiere nom="informatique">16</matiere>
+            <matiere nom="reseau">15</matiere>
+            <matiere nom="français">17</matiere>
+        </notes>
+    </etudiant>
+    <etudiant>
+        <photo>lien.jpg</photo>
+        <nom>saied</nom>
+        <prenom>Noor</prenom>
+        <cv><cv1 class="html"></cv1></cv>
+        <notes>
+            <matiere nom="Math">17</matiere>
+            <matiere nom="informatique">19</matiere>
+            <matiere nom="reseau">17</matiere>
+            <matiere nom="français">18</matiere>
+        </notes>
+    </etudiant>
+    <etudiant>
+        <photo>lien.jpg</photo>
+        <nom>ammar</nom>
+        <prenom>Amine</prenom>
+        <cv><cv1 class="html"></cv1></cv>
+        <notes>
+            <matiere nom="Math">12</matiere>
+            <matiere nom="informatique">8</matiere>
+            <matiere nom="reseau">18</matiere>
+            <matiere nom="français">10</matiere>
+        </notes>
+    </etudiant>
+
+   </filiere>
+   <filiere nom="GT">
+    <etudiant>
+        <photo>lien.jpg</photo>
+        <nom>moomen</nom>
+        <prenom>Wejden</prenom>
+        <cv>cv1.html</cv>
+        <notes>
+            <matiere nom="Math">18</matiere>
+            <matiere nom="informatique">16</matiere>
+            <matiere nom="reseau">15</matiere>
+            <matiere nom="français">17</matiere>
+        </notes>
+    </etudiant>
+    <etudiant>
+        <photo>lien.jpg</photo>
+        <nom>saied</nom>
+        <prenom>Noor</prenom>
+        <cv>cv1.html</cv>
+        <notes>
+            <matiere nom="Math">17</matiere>
+            <matiere nom="informatique">19</matiere>
+            <matiere nom="reseau">17</matiere>
+            <matiere nom="français">18</matiere>
+        </notes>
+    </etudiant>
+    <etudiant>
+        <photo>lien.jpg</photo>
+        <nom>ammar</nom>
+        <prenom>Amine</prenom>
+        <cv>Amine.pdf</cv>
+        <notes>
+            <matiere nom="Math">12</matiere>
+            <matiere nom="informatique">8</matiere>
+            <matiere nom="reseau">18</matiere>
+            <matiere nom="français">10</matiere>
+        </notes>
+    </etudiant>
+
+   </filiere>
+   <filiere nom="GEC">
+    <etudiant>
+        <photo>lien.jpg</photo>
+        <nom>moomen</nom>
+        <prenom>Wejden</prenom>
+        <cv>cv1.html</cv>
+        <notes>
+            <matiere nom="Math">18</matiere>
+            <matiere nom="informatique">16</matiere>
+            <matiere nom="reseau">15</matiere>
+            <matiere nom="français">17</matiere>
+        </notes>
+    </etudiant>
+    <etudiant>
+        <photo>lien.jpg</photo>
+        <nom>saied</nom>
+        <prenom>Noor</prenom>
+        <cv>cv1.html</cv>
+        <notes>
+            <matiere nom="Math">17</matiere>
+            <matiere nom="informatique">19</matiere>
+            <matiere nom="reseau">17</matiere>
+            <matiere nom="français">18</matiere>
+        </notes>
+    </etudiant>
+    <etudiant>
+        <photo>lien.jpg</photo>
+        <nom>ammar</nom>
+        <prenom>Amine</prenom>
+        <cv>cv1.html</cv>
+        <notes>
+            <matiere nom="Math">12</matiere>
+            <matiere nom="informatique">8</matiere>
+            <matiere nom="reseau">18</matiere>
+            <matiere nom="français">10</matiere>
+        </notes>
+    </etudiant>
+
+   </filiere>
+   <filiere nom="GII">
+    <etudiant>
+        <photo>lien.jpg</photo>
+        <nom>moomen</nom>
+        <prenom>Wejden</prenom>
+        <cv>cv1.html</cv>
+        <notes>
+            <matiere nom="Math">18</matiere>
+            <matiere nom="informatique">16</matiere>
+            <matiere nom="reseau">15</matiere>
+            <matiere nom="français">17</matiere>
+        </notes>
+    </etudiant>
+    <etudiant>
+        <photo>lien.jpg</photo>
+        <nom>saied</nom>
+        <prenom>Noor</prenom>
+        <cv>Noor.pdf</cv>
+        <notes>
+            <matiere nom="Math">17</matiere>
+            <matiere nom="informatique">19</matiere>
+            <matiere nom="reseau">17</matiere>
+            <matiere nom="français">18</matiere>
+        </notes>
+    </etudiant>
+    <etudiant>
+        <photo>lien.jpg</photo>
+        <nom>ammar</nom>
+        <prenom>Amine</prenom>
+        <cv>cv1.html</cv>
+        <notes>
+            <matiere nom="Math">12</matiere>
+            <matiere nom="informatique">8</matiere>
+            <matiere nom="reseau">18</matiere>
+            <matiere nom="français">10</matiere>
+        </notes>
+    </etudiant>
+
+   </filiere>
+
+</ecole>
